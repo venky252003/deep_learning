@@ -16,3 +16,6 @@ conda list
 
 ## Install all Packages
 pip install -r requirements.txt
+
+## Git Push to branch
+git add . && git commit -m "Example" && git push origin main

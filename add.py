@@ -31,11 +31,16 @@ def load_model(path):
 def predict_load_model(inputs, path):
     model = load_model(path)
     model.predict(inputs)
+
+def create_plot(file_name):
+    df = pd.DataFrame(AND)
+    save_plot(df, "or.png", model)
     
 
 if __name__ == '__main__':
-    model_path = "model//and.model"
+    model_path = "and.model"
     X, y = create_dataset()
     create_model(X, y)
     model_predict(X)
     save_model(model, model_path)
+    #create_plot("plot_add")
